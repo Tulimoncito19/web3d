@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bigote Con Joints 2
+* source:	https://sketchfab.com/3d-models/bigote-con-joints-2-cca3938cd4ad4150a831263ad207cfe3
+* author:	javiercastroabarca (https://sketchfab.com/javiercastroabarca)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bigote Con Joints 2" (https://sketchfab.com/3d-models/bigote-con-joints-2-cca3938cd4ad4150a831263ad207cfe3) by javiercastroabarca (https://sketchfab.com/javiercastroabarca) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
