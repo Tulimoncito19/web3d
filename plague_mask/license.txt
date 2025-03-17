@@ -1,0 +1,11 @@
+Model Information:
+* title:	Plague Mask
+* source:	https://sketchfab.com/3d-models/plague-mask-36b6373dcf334e7693f00655095ac1cb
+* author:	DJMaesen (https://sketchfab.com/bumstrum)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Plague Mask" (https://sketchfab.com/3d-models/plague-mask-36b6373dcf334e7693f00655095ac1cb) by DJMaesen (https://sketchfab.com/bumstrum) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
