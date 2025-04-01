@@ -1,0 +1,53 @@
+<html>
+  <head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+  <a-scene cursor="rayOrigin: mouse">
+	
+        <a-assets>
+          <img id="fons" src="cielo.jpeg" />
+          <img id="texturaterra" src="suelomuseo.jpg" />
+          <img id="guernica" src="guernica.jpg" />        
+          <img id="cara" src="6.jpg" />            
+          <img id="hojas" src="hojas.jpeg" />
+		      <img id="poma" src="poma.jpeg" />
+          <img id="tronco" src="tronco.jpeg" />
+          <img id="pared" src="pared.jpeg" />
+          <img id="guernica1" src="1.jpg" />
+          <img id="guernica2" src="2.jpg" />
+          <img id="guernica3" src="3.jpg" />
+          <img id="cara" src="4.jpeg" />
+          <img id="cara" src="5.jpg" />
+     
+        </a-assets>
+        <a-sky src="#fons"></a-sky>
+        <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" src="#texturaterra"></a-plane>
+        <a-plane id="guernica" position="-1 3 -8" rotation="0 0 0" width="8" height="2" src="#guernica"></a-plane>
+        <a-plane position="-1 0 -8.02" rotation="0 0 0" width="80" height="10"  src="#pared"></a-plane>
+        <a-plane position="-1 0 8.02" rotation="0 180 0" width="80" height="10"  src="#pared"></a-plane>
+
+  
+
+        <a-box position="-4 3 0" rotation="0 0 50"  src="#cara" depth="1" height="1" width="1"></a-box>
+		    <a-box position="7 2 20" rotation="0 0 50"  src="#poma" depth="1" height="10" width="10"></a-box>
+
+        <a-dodecahedron position="17 6 34" rotation="0 30 0" radius="3" src="#hojas"></a-dodecahedron>
+        <a-box position="17 0 34" rotation="0 0 0"  src="#tronco" depth="1" height="7" width="2"></a-box>
+
+        </a-entity>
+        </a-scene>
+        <script>
+          let unobjecte = document.querySelector("#guernica");
+       
+          unobjecte.addEventListener("click", () => {            
+            unobjecte.setAttribute("animation", {
+              property: "position",
+              to: "8 4 -6",
+              dur: 10000
+            });
+          });
+        </script>
+		
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script>
+    AFRAME.registerComponent("mylink", {
+      init: function () {
+        this.el.addEventListener("click", (e) => {
+          window.location = this.data.href;
+        })
+      }
+    })
+  </script>
+
+<body>
+  
+  <a-scene cursor="rayOrigin: mouse">
+    <a-assets>
+      <img id="poma" src="poma.jpeg"></img>
+      <a-asset-item id="fantasma" src="phantom_foxy/scene.gltf"></a-asset-item>
+      <a-asset-item id="bat" src="medium__bat-balloon/scene.gltf"></a-asset-item>
+
+    </a-assets>
+
+    <a-entity camera look-controls wasd-controls="false">
+      <a-entity cursor="fuse: true; fuseTimeout: 2000" position="0 0 -1"
+        geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03" material="color: red; shader: flat" animation="property: components.material.material.color;
+              type: color;
+              to: white;
+              dur: 1000;
+              dir: alternate;
+              loop: true">
+      </a-entity>
+    </a-entity>
+
+    <a-sky src="casadelsusto.jpg"></a-sky>
+    <a-entity src="#susto" position="-15 -15 -100" scale="5 5 5"
+                animation="property: position; dur: 1000; from: -15 -15 -1100; to: 0 -15 -30; dir: alternate; loop: true">        
+      </a-entity>
+
+      <a-entity gltf-model="#bat" rotation="0 -71 0" position="4 2.723 -1.343" scale="2 2 2"      
+    animation="property: position; dur: 3000; from: 4 1.5 -0.7; to: -8.409 1.500 1.358; dir: alternate; loop: true">   
+    </a-entity>
+    <a-entity gltf-model="#bat" rotation="0 -71 0" position="4 0.722 0.421" scale="2 2 2"      
+    animation="property: position; dur: 3000; from: 4 0.722 0.421; to: -8.409 1.500 1.358; dir: alternate; loop: true">   
+    </a-entity>
+    
+    <a-entity gltf-model="#bat" rotation="0 -71 0" position="4 0.760 -1.656" scale="2 2 2"      
+    animation="property: position; dur: 3000; from: 4 4 0.760 -1.656; to: -8.409 1.500 1.358; dir: alternate; loop: true"></a-entity>
+    
+      <a-dodecahedron position="-17 0.3 3.50" src="#poma" rotation="0 150 0"  transparent="true"   mylink="href:https://tulimoncito19.github.io/web3d/;"
+                animation="property: rotation; dur: 10000;to: 0 360 0; loop: true"> </a-dodecahedron>
+      
+      <a-entity gltf-model="#fantasma" position="-3 -0.6 -400" scale="2.5 2.5 2.5" 
+      animation="property: position; dur: 3000; from: 1.875 -250 -1506; to: 0 -250 0; dir: alternate; loop: true">   
+      </a-entity>
+
+      </a-dodecahedron>
+    </a-scene>
+
+
+
+</body>
+
+</head>
